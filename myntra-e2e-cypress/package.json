@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "test": "cypress run --reporter mochawesome --reporter-options reportDir=cypress/reports,mochaFile=cypress/reports/mochawesome.json over,overwrite=false"
+  },
+  "devDependencies": {
+    "cypress": "^12.9.0",
+    "cypress-mochawesome-reporter": "^3.4.0",
+    "mochawesome": "^7.1.3"
+  },
+  "dependencies": {
+    "cypress-xpath": "^2.0.1"
+  }
+}

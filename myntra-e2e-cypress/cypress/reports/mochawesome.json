@@ -1,0 +1,231 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 7,
+    "passes": 5,
+    "pending": 0,
+    "failures": 2,
+    "start": "2023-05-05T05:56:38.294Z",
+    "end": "2023-05-05T05:59:27.287Z",
+    "duration": 168993,
+    "testsRegistered": 7,
+    "passPercent": 71.42857142857143,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3a4aa9d7-7a8e-44fe-b524-6de1c1275943",
+      "title": "",
+      "fullFile": "cypress/Integration/cartPage.spec.js",
+      "file": "cypress/Integration/cartPage.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9ce6e1af-6547-4cb2-bcd6-eeab5dd31368",
+          "title": "Product & Cart Module",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Add to Bag Button UI",
+              "fullTitle": "Product & Cart Module Add to Bag Button UI",
+              "timedOut": null,
+              "duration": 18706,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos\",\n  \"value\": \"cypress/Integration/cartPage.spec.js\"\n}",
+              "code": "Cypress.once('uncaught:exception', (err, runnable) => {\n  return false;\n});\n_ProductPage.default.assertingForTextChange();",
+              "err": {},
+              "uuid": "555d29ba-870d-4808-a83c-78088c889e53",
+              "parentUUID": "9ce6e1af-6547-4cb2-bcd6-eeab5dd31368",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Add to Bag Button Functionality",
+              "fullTitle": "Product & Cart Module Add to Bag Button Functionality",
+              "timedOut": null,
+              "duration": 35000,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos\",\n  \"value\": \"cypress/Integration/cartPage.spec.js\"\n}",
+              "code": "Cypress.once('uncaught:exception', (err, runnable) => {\n  return false;\n});\n_ProductPage.default.addingProductToBag();\ncy.get('h1.pdp-title').then($heading => {\n  let headingText = $heading.text();\n  return headingText;\n}).then(hText => {\n  _ProductPage.default.navigatingToBagPage();\n  cy.wait(1000);\n  _ProductPage.default.assertingForProductNameOnCartPage(hText);\n});",
+              "err": {},
+              "uuid": "0c5e1db0-ffc8-4942-a88b-72711a0c2592",
+              "parentUUID": "9ce6e1af-6547-4cb2-bcd6-eeab5dd31368",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Bag Icon UI Change",
+              "fullTitle": "Product & Cart Module Bag Icon UI Change",
+              "timedOut": null,
+              "duration": 23758,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos\",\n    \"value\": \"cypress/Integration/cartPage.spec.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        {\n          \"title\": \"Failed screenshot\",\n          \"value\": \"/cartPage.spec.js/Product & Cart Module -- Bag Icon UI Change (failed).png\"\n        }\n      ]\n    ]\n  }\n]",
+              "code": "_ProductPage.default.addingProductToBag();\n_ProductPage.default.validatingUIChange();",
+              "err": {
+                "message": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > gtag is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > gtag is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at <unknown> (<unknown>:1:1)\n    at <unknown> (https://www.googletagmanager.com/gtm.js?id=GTM-H34B:513:414)\n    at <unknown> (https://www.googletagmanager.com/gtm.js?id=GTM-H34B:514:118)\n    at b (https://www.googletagmanager.com/gtm.js?id=GTM-H34B:514:329)\n    at We (https://www.googletagmanager.com/gtm.js?id=GTM-H34B:109:261)\n    at e (https://www.googletagmanager.com/gtm.js?id=GTM-H34B:334:266)\n    at <unknown> (https://www.googletagmanager.com/gtm.js?id=GTM-H34B:59:130)\n    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-H34B:335:386)\n    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-H34B:335:142)\n    at fu (https://www.googletagmanager.com/gtm.js?id=GTM-H34B:336:986)\n    at ou (https://www.googletagmanager.com/gtm.js?id=GTM-H34B:340:43)\n    at vv (https://www.googletagmanager.com/gtm.js?id=GTM-H34B:357:272)\n    at yv (https://www.googletagmanager.com/gtm.js?id=GTM-H34B:362:55)\n    at Cv.b.push (https://www.googletagmanager.com/gtm.js?id=GTM-H34B:365:315)\n    at <unknown> (https://www.googletagmanager.com/gtm.js?id=GTM-H34B:364:387)\n    at r (https://constant.myntassets.com/web/assets/js/main.677cc996ea7d80e8361a.js:1:441228)\n    at i (https://www.myntra.com/kurta-sets/khushal-k/khushal-k-ethnic-motifs-embroidered-sequined-kurta-with-palazzos--dupatta/22120556/buy:1:1431)\n    at <unknown> (https://www.myntra.com/kurta-sets/khushal-k/khushal-k-ethnic-motifs-embroidered-sequined-kurta-with-palazzos--dupatta/22120556/buy:1:1804)",
+                "diff": null
+              },
+              "uuid": "a1189ba5-1d84-4bb4-9f64-1d7094caa3aa",
+              "parentUUID": "9ce6e1af-6547-4cb2-bcd6-eeab5dd31368",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cart Page UI/UX (Product Name)",
+              "fullTitle": "Product & Cart Module Cart Page UI/UX (Product Name)",
+              "timedOut": null,
+              "duration": 26739,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos\",\n  \"value\": \"cypress/Integration/cartPage.spec.js\"\n}",
+              "code": "_ProductPage.default.addingProductToBag();\ncy.get('h1.pdp-title').then($heading => {\n  let headingText = $heading.text();\n  return headingText;\n}).then(hText => {\n  _ProductPage.default.navigatingToBagPage();\n  cy.wait(1000);\n  _ProductPage.default.assertingForProductNameOnCartPage(hText);\n});",
+              "err": {},
+              "uuid": "bf5d0dd1-3abc-433a-83cd-83cb5de9e9c6",
+              "parentUUID": "9ce6e1af-6547-4cb2-bcd6-eeab5dd31368",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cart Page UI/UX (Product Details)",
+              "fullTitle": "Product & Cart Module Cart Page UI/UX (Product Details)",
+              "timedOut": null,
+              "duration": 17349,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos\",\n    \"value\": \"cypress/Integration/cartPage.spec.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        {\n          \"title\": \"Failed screenshot\",\n          \"value\": \"/cartPage.spec.js/Product & Cart Module -- Cart Page UIUX (Product Details) (failed).png\"\n        }\n      ]\n    ]\n  }\n]",
+              "code": "_ProductPage.default.addingProductToBag();\ncy.get('h1.pdp-name').then($heading => {\n  let headingText = $heading.text();\n  return headingText;\n}).then(pText => {\n  _ProductPage.default.navigatingToBagPage();\n  cy.wait(1000);\n  cy.get('#cartItemsList > div > div > div > div.itemContainer-base-item > div.itemContainer-base-itemLeft > div > div.animation-fadeIn > div > div.itemComponents-base-toolTipContainer > div.itemComponents-base-toolTipCTA').click({\n    force: true\n  });\n  cy.get('#cartItemsList > div > div > div > div.itemContainer-base-item > div.itemContainer-base-itemRight > div').contains(pText).screenshot();\n});",
+              "err": {
+                "message": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > gtag is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > gtag is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at <unknown> (<unknown>:1:1)\n    at <unknown> (https://www.googletagmanager.com/gtm.js?id=GTM-H34B:513:414)\n    at <unknown> (https://www.googletagmanager.com/gtm.js?id=GTM-H34B:514:118)\n    at b (https://www.googletagmanager.com/gtm.js?id=GTM-H34B:514:329)\n    at We (https://www.googletagmanager.com/gtm.js?id=GTM-H34B:109:261)\n    at e (https://www.googletagmanager.com/gtm.js?id=GTM-H34B:334:266)\n    at <unknown> (https://www.googletagmanager.com/gtm.js?id=GTM-H34B:59:130)\n    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-H34B:335:386)\n    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-H34B:335:142)\n    at fu (https://www.googletagmanager.com/gtm.js?id=GTM-H34B:336:986)\n    at ou (https://www.googletagmanager.com/gtm.js?id=GTM-H34B:340:43)\n    at vv (https://www.googletagmanager.com/gtm.js?id=GTM-H34B:357:272)\n    at yv (https://www.googletagmanager.com/gtm.js?id=GTM-H34B:362:55)\n    at Cv.b.push (https://www.googletagmanager.com/gtm.js?id=GTM-H34B:365:315)\n    at <unknown> (https://www.googletagmanager.com/gtm.js?id=GTM-H34B:364:387)\n    at r (https://constant.myntassets.com/web/assets/js/main.677cc996ea7d80e8361a.js:1:441228)\n    at i (https://www.myntra.com/kurta-sets/khushal-k/khushal-k-ethnic-motifs-embroidered-sequined-kurta-with-palazzos--dupatta/22120556/buy:1:1431)\n    at <unknown> (https://www.myntra.com/kurta-sets/khushal-k/khushal-k-ethnic-motifs-embroidered-sequined-kurta-with-palazzos--dupatta/22120556/buy:1:1804)",
+                "diff": null
+              },
+              "uuid": "dc6d84fa-3a66-4c69-b60b-96c93c6ac6a8",
+              "parentUUID": "9ce6e1af-6547-4cb2-bcd6-eeab5dd31368",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cart Page UI/UX (Product Price)",
+              "fullTitle": "Product & Cart Module Cart Page UI/UX (Product Price)",
+              "timedOut": null,
+              "duration": 26382,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos\",\n    \"value\": \"cypress/Integration/cartPage.spec.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        {\n          \"title\": \"Screenshot\",\n          \"value\": \"/cartPage.spec.js/Product & Cart Module -- Cart Page UIUX (Product Price).png\"\n        }\n      ]\n    ]\n  }\n]",
+              "code": "_ProductPage.default.addingProductToBag();\ncy.get('#mountRoot > div > div:nth-child(1) > main > div.pdp-details.common-clearfix > div.pdp-description-container > div.pdp-price-info > div > p.pdp-discount-container > span.pdp-price').then($heading => {\n  let headingText = $heading.text();\n  let digi = pPriceSet(headingText);\n  return digi;\n}).then(hText => {\n  _ProductPage.default.navigatingToBagPage();\n  cy.wait(1000);\n  cy.get('.itemContainer-base-price').contains(hText).screenshot();\n});",
+              "err": {},
+              "uuid": "331456f3-37b3-4615-9145-a4656373794e",
+              "parentUUID": "9ce6e1af-6547-4cb2-bcd6-eeab5dd31368",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Complete User Workflow Adding Product to the Bag",
+              "fullTitle": "Product & Cart Module Complete User Workflow Adding Product to the Bag",
+              "timedOut": null,
+              "duration": 19779,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos\",\n  \"value\": \"cypress/Integration/cartPage.spec.js\"\n}",
+              "code": "_ProductPage.default.visitProductsPage();\ncy.get('#desktopSearchResults > div.search-searchProductsContainer.row-base > section > ul > li:nth-child(1) > a').invoke('removeAttr', 'target').click(); // Open Product Page in the Same Browser Tab.\ncy.get('#sizeButtonsContainer > div.size-buttons-size-buttons > div:nth-child(3) > div.size-buttons-buttonContainer > button > span').parent().click(); // Select Third Product Size.\ncy.get('#mountRoot > div > div:nth-child(1) > main > div.pdp-details.common-clearfix > div.pdp-description-container > div:nth-child(2) > div:nth-child(2) > div > div.pdp-add-to-bag.pdp-button.pdp-flex.pdp-center').click(); // Clicking on Add to Bag Button.\ncy.get('#mountRoot > div > div:nth-child(1) > main > div.pdp-details.common-clearfix > div.pdp-description-container > div:nth-child(2) > div:nth-child(2) > div > a > span:nth-child(1)').contains('GO TO BAG'); // Asserting the Text Transformation.\ncy.get('#desktop-header-cnt > div.desktop-bound > div.desktop-actions > a.desktop-cart > span.desktop-badge.desktop-melon').should(\"exist\"); // UI Change occurs in the Bag Icon.\ncy.get('#desktop-headerMount > div > div.notify-container > div').should('be.visible').contains('Added to bag'); // Adding Product to the Cart sends an alert popup which also contains the text \"Added to Bag\".",
+              "err": {},
+              "uuid": "fc721985-4139-4d43-9663-6263047fc64d",
+              "parentUUID": "9ce6e1af-6547-4cb2-bcd6-eeab5dd31368",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "555d29ba-870d-4808-a83c-78088c889e53",
+            "0c5e1db0-ffc8-4942-a88b-72711a0c2592",
+            "bf5d0dd1-3abc-433a-83cd-83cb5de9e9c6",
+            "331456f3-37b3-4615-9145-a4656373794e",
+            "fc721985-4139-4d43-9663-6263047fc64d"
+          ],
+          "failures": [
+            "a1189ba5-1d84-4bb4-9f64-1d7094caa3aa",
+            "dc6d84fa-3a66-4c69-b60b-96c93c6ac6a8"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 167713,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "reportPageTitle": "custom-title",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "saveAllAttempts": false,
+        "reportDir": "cypress/reports",
+        "mochaFile": "cypress/reports/mochawesome.json"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
